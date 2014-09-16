@@ -35,7 +35,7 @@ public class SkyblockCommandAPI implements CommandExecutor {
     }
 
     @Override
-    public boolean onCommand(CommandSender commandSender, Command cmd, String commandLabel, String[] args) {
+    private boolean onCommand(CommandSender commandSender, Command cmd, String commandLabel, String[] args) {
         if (!cmd.getName().equalsIgnoreCase("is")) return true;
         if (args.length == 0) {
             // Send information about all the registered commands.

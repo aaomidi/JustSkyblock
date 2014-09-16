@@ -14,7 +14,7 @@ public class WorldEditUtils {
         this.instance = instance;
     }
 
-    private EditSession getEditSession(World world) {
+    protected EditSession getEditSession(World world) {
         return instance.getWorldEditPlugin().getWorldEdit().getEditSessionFactory().getEditSession(LocationsParser.getWorldEditWorld(world), -1);
     }
 

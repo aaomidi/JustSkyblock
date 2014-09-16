@@ -74,6 +74,14 @@ public class MySQLConnector {
         return this.connection;
     }
 
+    /**
+     * Execute a query and expect a ResultSet from the database.
+     *
+     * @param query      The query.
+     * @param parameters The parameters in the query.
+     * @return The ResultSet from the database.
+     * Note: If connection is not active and the plugin cannot reconnect, the plugin will throw an unrecoverable error.
+     */
     public ResultSet executeQuery(String query, Object... parameters) {
         int parameterCount = (parameters == null) ? 0 : parameters.length;
         if (StringUtils.countMatches(query, "?") != parameterCount) {
@@ -106,6 +114,14 @@ public class MySQLConnector {
         }
     }
 
+    /**
+     * Executes a query and do not expect a result.
+     *
+     * @param query      The query.
+     * @param parameters The parameters in the query.
+     * @return status of the query.
+     * Note: If connection is not active and the plugin cannot reconnect, the plugin will throw an unrecoverable error.
+     */
     public int executeUpdate(String query, Object... parameters) {
         int parameterCount = (parameters == null) ? 0 : parameters.length;
         if (StringUtils.countMatches(query, "?") != parameterCount) {
@@ -138,6 +154,9 @@ public class MySQLConnector {
         }
     }
 
+    /**
+     * Simply gracefully disconnect from the MySQL database.
+     */
     public void disconnect() {
         try {
             connection.close();

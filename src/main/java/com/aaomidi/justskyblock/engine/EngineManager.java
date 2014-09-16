@@ -20,6 +20,7 @@ public class EngineManager {
 
     public EngineManager(JustSkyblock instance) {
         this.instance = instance;
+        this.init();
     }
 
     private void init() {

@@ -4,8 +4,6 @@ import com.aaomidi.justskyblock.JustSkyblock;
 import com.aaomidi.justskyblock.api.command.SkyblockCommandAPI;
 import lombok.Getter;
 
-import java.util.WeakHashMap;
-
 /**
  * @author aaomidi
  */
@@ -21,7 +19,6 @@ public class API {
 
     private void init() {
         skyblockCommandAPI = new SkyblockCommandAPI(instance);
-        WeakHashMap<String, String> map = new WeakHashMap<>();
     }
 
 

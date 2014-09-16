@@ -41,6 +41,8 @@ public class IslandGeneration {
         }
 
     }
+    //TODO: Edit the generated island and add stuff to the chest.
+    //TODO: Edit the generated island and edit the sign and add the player's name on there.
 
 
 }

@@ -23,6 +23,7 @@ public class JustSkyblock extends JavaPlugin {
     @Override
     public void onEnable() {
         this.setupWorldEdit();
+        this.setupClasses();
     }
 
     @Override
@@ -36,6 +37,10 @@ public class JustSkyblock extends JavaPlugin {
             this.getServer().getPluginManager().disablePlugin(this);
         }
         worldEditPlugin = (WorldEditPlugin) plugin;
+    }
+
+    private void setupClasses() {
+        engineManager = new EngineManager(this);
     }
 
 }

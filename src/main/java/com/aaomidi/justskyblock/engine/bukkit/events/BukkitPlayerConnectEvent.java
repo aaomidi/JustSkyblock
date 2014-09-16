@@ -15,5 +15,6 @@ public class BukkitPlayerConnectEvent {
 
     @EventHandler(priority = EventPriority.MONITOR)
     public void constructSkyblockPlayerObject(PlayerLoginEvent event) {
+        //TODO: Nothing until we finish database stuffs!
     }
 }

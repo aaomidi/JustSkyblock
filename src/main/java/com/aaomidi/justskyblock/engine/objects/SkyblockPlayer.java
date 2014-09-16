@@ -9,6 +9,7 @@ import java.util.UUID;
 /**
  * @author aaomidi
  */
+//TODO: Basically add more information.
 @RequiredArgsConstructor
 public class SkyblockPlayer {
     private final String playerName;

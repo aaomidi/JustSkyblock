@@ -1,5 +1,6 @@
 package com.aaomidi.justskyblock;
 
+import com.aaomidi.justskyblock.engine.EngineManager;
 import com.aaomidi.justskyblock.utils.StringManager;
 import com.sk89q.worldedit.bukkit.WorldEditPlugin;
 import lombok.Getter;
@@ -12,6 +13,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class JustSkyblock extends JavaPlugin {
     @Getter
     private WorldEditPlugin worldEditPlugin;
+    @Getter
+    private EngineManager engineManager;
 
     @Override
     public void onLoad() {

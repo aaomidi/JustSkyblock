@@ -1,6 +1,6 @@
 JustSkyblock
 ==========
-
+[![Build Status](https://drone.io/github.com/aaomidi/JustSkyblock/status.png)](https://drone.io/github.com/aaomidi/JustSkyblock/latest)
 
 ----------
 ## Planned Features##

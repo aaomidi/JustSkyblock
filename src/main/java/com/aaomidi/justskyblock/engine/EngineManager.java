@@ -1,9 +1,9 @@
 package com.aaomidi.justskyblock.engine;
 
 import com.aaomidi.justskyblock.JustSkyblock;
-import com.aaomidi.justskyblock.engine.generator.IslandGeneration;
-import com.aaomidi.justskyblock.engine.generator.LocationsParser;
-import com.aaomidi.justskyblock.engine.generator.WorldEditUtils;
+import com.aaomidi.justskyblock.engine.generation.IslandGeneration;
+import com.aaomidi.justskyblock.engine.generation.LocationsParser;
+import com.aaomidi.justskyblock.engine.generation.WorldEditUtils;
 import lombok.Getter;
 
 /**

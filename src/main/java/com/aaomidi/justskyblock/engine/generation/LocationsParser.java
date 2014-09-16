@@ -1,4 +1,4 @@
-package com.aaomidi.justskyblock.engine.generator;
+package com.aaomidi.justskyblock.engine.generation;
 
 
 import com.aaomidi.justskyblock.JustSkyblock;

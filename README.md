@@ -1,6 +1,6 @@
 JustSkyblock
 ==========
-[![Build Status](https://drone.io/github.com/aaomidi/JustSkyblock/status.png)](https://drone.io/github.com/aaomidi/JustSkyblock/latest)
+![JustSkyblock logo](https://github.com/aaomidi/JustSkyblock/raw/master/images/JustSkyblock.png)
 
 ----------
 ## Planned Features##
@@ -26,3 +26,5 @@ More achievements can be created for the plugin using our SkyblockAchievement in
 
 
 ----------
+
+[![Build Status](https://drone.io/github.com/aaomidi/JustSkyblock/status.png)](https://drone.io/github.com/aaomidi/JustSkyblock/latest)

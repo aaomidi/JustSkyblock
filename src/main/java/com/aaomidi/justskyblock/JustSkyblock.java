@@ -7,6 +7,8 @@ import lombok.Getter;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
+
 /**
  * @author aaomidi
  */
@@ -18,7 +20,9 @@ public class JustSkyblock extends JavaPlugin {
 
     @Override
     public void onLoad() {
+        this.generateFiles();
     }
+
 
     @Override
     public void onEnable() {
@@ -43,4 +47,10 @@ public class JustSkyblock extends JavaPlugin {
         engineManager = new EngineManager(this);
     }
 
+    private void generateFiles() {
+        File configFile = new File(this.getDataFolder(), "config.yml");
+        if (!configFile.exists()) {
+            this.saveDefaultConfig();
+        }
+    }
 }

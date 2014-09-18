@@ -5,10 +5,10 @@ import com.aaomidi.justskyblock.JustSkyblock;
 /**
  * @author aaomidi
  */
-public class SkyblockProtectionManagement {
+public class ProtectionManagement {
     protected final JustSkyblock instance;
 
-    public SkyblockProtectionManagement(JustSkyblock instance) {
+    public ProtectionManagement(JustSkyblock instance) {
         this.instance = instance;
     }
 }

@@ -1,2 +1,25 @@
+#-------------------------------------------------------#
+#                      JustSkyblock                     #
+#    A plugin developed by aaomidi and DarkSeraphim     #
+#-------------------------------------------------------#
 General-Settings:
+  # Prefix of the messages sent by the plugin.
+  Prefix: "&8&l[&bJust&6Skyblock&8&l] "
+Island-Generation:
+  # Size of the skyblock islands.
+  # NOTE: Do NOT change this number on a live server or it could severely mess up your entire server.
+  Size: 100
+  # If your island has a sign, you can edit what the sign says.
+  Sign-Text:
+    - "&6JustSkyblock"
+    - "&3%p%"
+    - ""
+    - ""
+  Chest-Items:
+    - Type: Dirt
+      Sub-Type: 0
+      Amount: 8
+    - Type: Log
+      Sub-Type: 4
+      Amount: 6
 

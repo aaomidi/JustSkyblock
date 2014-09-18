@@ -42,8 +42,11 @@ public class MySQLManager {
         permission TINYINT NOT NULL DEFAULT 0,
          */
         String islandsPermissionsQuery = "CREATE TABLE IF NOT EXISTS `sb_permissions`(`playerID` INT NOT NULL, `islandID` INT NOT NULL, `permission` TINYINT NOT NULL DEFAULT 0, PRIMARY KEY (`playerID`, `islandID`))Engine=InnoDB DEFAULT CHARSET=utf8;";
+        // Execute the queries.
         mySQLConnector.executeUpdate(playerIndexQuery);
         mySQLConnector.executeUpdate(islandsIndexQuery);
         mySQLConnector.executeUpdate(islandsPermissionsQuery);
     }
+
+
 }

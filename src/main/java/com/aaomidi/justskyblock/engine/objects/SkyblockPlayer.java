@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
+import java.util.HashSet;
 import java.util.UUID;
 
 /**
@@ -16,6 +17,7 @@ public class SkyblockPlayer {
     private final String playerName;
     private final UUID uuid;
     private Player base;
+    private HashSet<SkyblockPermission> skyblockPermissions;
 
     public Player getBase() {
         if (base == null) {

@@ -14,6 +14,8 @@ import java.io.File;
  */
 public class JustSkyblock extends JavaPlugin {
     @Getter
+    private static long threadID;
+    @Getter
     private WorldEditPlugin worldEditPlugin;
     @Getter
     private EngineManager engineManager;
@@ -26,6 +28,7 @@ public class JustSkyblock extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        threadID = Thread.currentThread().getId();
         this.setupWorldEdit();
         this.setupClasses();
     }

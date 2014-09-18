@@ -40,12 +40,6 @@ public class MySQLManager {
         playerID INT NOT NULL,
         islandID INT NOT NULL,
         permission TINYINT NOT NULL DEFAULT 0,
-        FOREIGN KEY playerID
-            REFERENCES sb_index(id)
-            ON DELETE CASCADE ON UPDATE CASCADE;
-        FOREIGN KEY islandID
-            REFERENCES sb_islands(id)
-            ON DELETE CASCADE ON UPDATE CASCADE;
          */
         String islandsPermissionsQuery = "CREATE TABLE IF NOT EXISTS `sb_permissions`(`playerID` INT NOT NULL, `islandID` INT NOT NULL, `permission` TINYINT NOT NULL DEFAULT 0, PRIMARY KEY (`playerID`, `islandID`))Engine=InnoDB DEFAULT CHARSET=utf8;";
         mySQLConnector.executeUpdate(playerIndexQuery);

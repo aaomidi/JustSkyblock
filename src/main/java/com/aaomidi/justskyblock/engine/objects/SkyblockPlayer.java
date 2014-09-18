@@ -12,6 +12,7 @@ import java.util.UUID;
 //TODO: Basically add more information.
 @RequiredArgsConstructor
 public class SkyblockPlayer {
+    private final int playerID;
     private final String playerName;
     private final UUID uuid;
     private Player base;

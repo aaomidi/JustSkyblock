@@ -1,6 +1,7 @@
 package com.aaomidi.justskyblock.storage.mysql;
 
 import com.aaomidi.justskyblock.JustSkyblock;
+import org.bukkit.entity.Player;
 
 /**
  * @author aaomidi
@@ -46,6 +47,16 @@ public class MySQLManager {
         mySQLConnector.executeUpdate(playerIndexQuery);
         mySQLConnector.executeUpdate(islandsIndexQuery);
         mySQLConnector.executeUpdate(islandsPermissionsQuery);
+    }
+
+    /**
+     * Initializes a player's index.
+     *
+     * @param player Bukkit's player object.
+     */
+    protected void initializePlayer(Player player) {
+        String initIndex = "INSERT INTO `sb_index`(`uuid`, `playerName`) VALUES (?,?) ON DUPLICATE KEY UPDATE `playerName`=?";
+        mySQLConnector.executeQuery(initIndex, player.getUniqueId(), player.getName(), player.getName());
     }
 
 

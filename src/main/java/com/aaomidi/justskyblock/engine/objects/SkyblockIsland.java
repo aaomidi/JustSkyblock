@@ -1,5 +1,6 @@
 package com.aaomidi.justskyblock.engine.objects;
 
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.util.Vector;
 
@@ -8,8 +9,13 @@ import org.bukkit.util.Vector;
  */
 @RequiredArgsConstructor
 public class SkyblockIsland {
+    @Getter
     private final int islandID;
+    @Getter
     private final Vector min;
+    @Getter
     private final Vector max;
+    @Getter
     private final boolean isPurged;
+
 }

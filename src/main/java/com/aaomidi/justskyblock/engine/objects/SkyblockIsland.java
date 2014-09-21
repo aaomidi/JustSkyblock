@@ -12,6 +12,8 @@ public class SkyblockIsland {
     @Getter
     private final int islandID;
     @Getter
+    private final String serverName;
+    @Getter
     private final Vector min;
     @Getter
     private final Vector max;

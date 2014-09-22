@@ -16,6 +16,8 @@ public class JustSkyblock extends JavaPlugin {
     @Getter
     private static long threadID;
     @Getter
+    private static String serverName;
+    @Getter
     private WorldEditPlugin worldEditPlugin;
     @Getter
     private EngineManager engineManager;

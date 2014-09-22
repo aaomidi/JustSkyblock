@@ -13,8 +13,10 @@ import org.bukkit.util.Vector;
  */
 @RequiredArgsConstructor
 public class SkyblockPermission {
-    @Getter
+    /*@Getter
     private static String serverName;
+    Instead of this we can just not load islands who are not on this server.
+    */
     @Getter
     private final Vector max;
     @Getter

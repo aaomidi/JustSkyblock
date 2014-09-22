@@ -23,6 +23,7 @@ public class SkyblockPlayer {
     private final UUID uuid;
     private Player base;
     @NonNull
+    @Getter
     private HashSet<SkyblockPermission> skyblockPermissions;
 
     /**

@@ -24,7 +24,7 @@ public class SkyblockPlayer {
     private Player base;
     @NonNull
     @Getter
-    private HashSet<SkyblockPermission> skyblockPermissions;
+    private HashSet<SkyblockPermission> skyblockPermissions = new HashSet<SkyblockPermission>();
 
     /**
      * Gets bukkit's player object.
@@ -33,8 +33,7 @@ public class SkyblockPlayer {
      */
     public Player getBase() {
         if (base == null) {
-            Player player = Bukkit.getPlayer(playerName);
-            base = player;
+            base = Bukkit.getPlayer(playerName);
         }
         return base;
     }

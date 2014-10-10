@@ -1,5 +1,7 @@
 package com.aaomidi.justskyblock.engine.objects;
 
+import com.aaomidi.justskyblock.engine.generation.LocationsParser;
+import com.sk89q.worldedit.regions.Region;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.util.Vector;
@@ -20,4 +22,7 @@ public class SkyblockIsland {
     @Getter
     private final boolean isPurged;
 
+    public Region getIslandRegion() {
+        return LocationsParser.getRegion(min, max);
+    }
 }

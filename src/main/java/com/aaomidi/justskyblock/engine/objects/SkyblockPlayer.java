@@ -1,5 +1,6 @@
 package com.aaomidi.justskyblock.engine.objects;
 
+import com.aaomidi.justskyblock.engine.objects.enums.PermissionLevel;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -36,5 +37,21 @@ public class SkyblockPlayer {
             base = Bukkit.getPlayer(playerName);
         }
         return base;
+    }
+
+    /**
+     * Returns the player's Skyblock island where he is the owner of them.
+     *
+     * @return The player's island.
+     */
+    public SkyblockIsland getSkyblockIsland() {
+        for (SkyblockPermission permission : skyblockPermissions) {
+            if (!permission.getPermissionLevel().equals(PermissionLevel.OWNERSHIP)) {
+                continue;
+            }
+            //TODO: Make this return something.
+            return null;
+        }
+        return null;
     }
 }

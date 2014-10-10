@@ -43,6 +43,13 @@ public abstract class DataStorageInterface {
      */
     public abstract SkyblockIsland getSkyblockIsland(UUID uuid);
 
+    /**
+     * Gets the last skyblock island that was purged.
+     *
+     * @return Last skyblock island that was purged. If none exists the method will return null.
+     */
+    public abstract SkyblockIsland getLastPurgedIsland();
+
     public abstract boolean createSkyblockPlayer(String playerName);
 
     public abstract boolean createSkyblockPlayer(UUID uuid);

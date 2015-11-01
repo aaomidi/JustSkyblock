@@ -1,6 +1,7 @@
 JustSkyblock
 ==========
 ![JustSkyblock logo](https://github.com/aaomidi/JustSkyblock/raw/master/images/JustSkyblock.png)
+JUST SKYBLOCK NOTHING ELSE!!!11111!!
 
 ----------
 ## Planned Features##
